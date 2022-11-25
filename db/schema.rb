@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_25_164451) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_25_164759) do
+  create_table "clergies", force: :cascade do |t|
+    t.string "name"
+    t.string "induction_date"
+    t.string "former_church"
+    t.string "years_of_service"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "departments", force: :cascade do |t|
     t.string "name"
     t.string "leader"

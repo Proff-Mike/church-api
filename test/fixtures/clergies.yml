@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  induction_date: MyString
+  former_church: MyString
+  years_of_service: MyString
+
+two:
+  name: MyString
+  induction_date: MyString
+  former_church: MyString
+  years_of_service: MyString

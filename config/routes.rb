@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :clergies
   resources :ministries
   resources :departments
   resources :members

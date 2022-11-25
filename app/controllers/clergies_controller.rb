@@ -1,0 +1,2 @@
+class ClergiesController < ApplicationController
+end
