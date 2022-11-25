@@ -10,7 +10,7 @@ class CreateMembers < ActiveRecord::Migration[7.0]
       t.string :marital_status
       t.string :gender
       t.date :date_of_birth
-      t.string :church_group
+      t.string :department
 
       t.timestamps
     end

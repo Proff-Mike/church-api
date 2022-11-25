@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_25_124058) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_25_163914) do
+  create_table "departments", force: :cascade do |t|
+    t.string "name"
+    t.string "leader"
+    t.datetime "meeting_time"
+    t.integer "number_of_members"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "members", force: :cascade do |t|
     t.string "title"
     t.string "surname"
@@ -21,7 +30,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_25_124058) do
     t.string "marital_status"
     t.string "gender"
     t.date "date_of_birth"
-    t.string "church_group"
+    t.string "department"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
