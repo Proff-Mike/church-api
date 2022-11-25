@@ -30,7 +30,7 @@ class MembersController < ApplicationController
   private
 
   def member_params
-    params.permit(:title, :surname, :first_name, :tel_no, :address, :email, :marital_status, :gender, :date_of_birth, :church_group)
+    params.permit(:title, :surname, :first_name, :tel_no, :address, :email, :marital_status, :gender, :date_of_birth, :department)
 end
 
 end
